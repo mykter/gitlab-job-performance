@@ -24,7 +24,7 @@ Show job duration over time, for all jobs in the build stage, excluding jobs tha
 ./gitlab-job-perf.py https://gitlab.example.com mygroup/myproj --cache=myproj.json --stage=build --ignore-over=600
 ```
 
-![Duration over time](https://raw.githubusercontent.com/mykter/gitlab-job-perf/master/time.png)
+![Duration over time](https://raw.githubusercontent.com/mykter/gitlab-job-performance/master/time.png)
 
 Show distribution of the test job (exact name match) since 2020:
 
@@ -32,6 +32,6 @@ Show distribution of the test job (exact name match) since 2020:
 ./gitlab-job-perf.py https://gitlab.example.com mygroup/myproj --dist --cache=myproj.json --job=^test$ --since=2020-01-01
 ```
 
-![Duration distribution](https://raw.githubusercontent.com/mykter/gitlab-job-perf/master/dist.png)
+![Duration distribution](https://raw.githubusercontent.com/mykter/gitlab-job-performance/master/dist.png)
 
 For additional options, run `./gitlab-job-perf.py --help`
